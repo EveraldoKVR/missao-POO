@@ -7,7 +7,11 @@ class Produto:
         self.estoque = estoque
     # definição do método exibir detalhes 
     def exibir_detalhes(self):
-        print(f'\nProduto: {self.nome}\n Preço: R${self.preco:.2f}\n Estoque: {self.estoque} unidades\n' )
+        print(f'\nProduto: {self.nome}\n Preço: R${self.preco:.2f}\n Estoque: {self.estoque} unidades' )
+    # definição do método emitir notas
+    def emitir_nota(self):
+        print(f'Nota Fiscal gerada para {self.nome}')
+    
         
 # criando a subclasse produto nacional e definindo seus atributos
 class ProdutoNacional(Produto):
