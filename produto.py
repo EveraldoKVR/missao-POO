@@ -11,7 +11,17 @@ class Produto:
     # definição do método emitir notas
     def emitir_nota(self):
         print(f'Nota Fiscal gerada para {self.nome}')
-    
+    # definição do método repor para reposição do estoque    
+    def repor(self, quantidade):
+        self.estoque += quantidade
+        print(f'Reposição: {quantidade} unidades. Estoque atual: {self.estoque}' )
+    # definição do método vender para saida de estoque por uma venda
+    def vender(self, quantidade):
+        if quantidade > self.estoque:
+            print(f'Quantidade indisponível no estoque. \nQuantidade disponível {self.estoque} unidades.')
+        else:
+            self.estoque -= quantidade
+            print(f'Venda realizada. \nEstoque atual: {self.estoque} unidades')
         
 # criando a subclasse produto nacional e definindo seus atributos
 class ProdutoNacional(Produto):
