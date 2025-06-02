@@ -11,3 +11,4 @@ produto_importado_1 = ProdutoImportado('Notebook', 5000.0, 5, 0.15)
 
 produto_nacional_1.exibir_detalhes()
 produto_importado_1.exibir_detalhes()
+
