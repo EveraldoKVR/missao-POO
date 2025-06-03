@@ -13,6 +13,9 @@ class Produto:
     def exibir_detalhes(self):
         print(f'\nProduto: {self.nome}\n Preço: R${self.preco:.2f}\n Estoque: {self.estoque} unidades' )
     
+    def preco_final(self):
+        return self.preco
+    
     # definição do método emitir notas
     def emitir_nota(self):
         print(f'Nota Fiscal gerada para {self.nome}')
